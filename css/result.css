@@ -1,0 +1,160 @@
+body{
+	margin: 0;
+	background-color: #FFFFFF;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body::scrollbar {
+    display: none;
+}
+
+.container{
+	overflow: hidden;
+	display: flex;
+	margin-right: 2%;
+	margin-left: 1.5%;
+}
+
+.left{
+	display:flex;
+	flex-direction: column;
+}
+
+.left .findResult{
+	display: flex;
+	margin-top: 20px;
+	width: 450px;
+}
+
+.left .findResult img{
+	display: block;
+	height: 150px;
+	margin: 50px 6px;
+	padding: 0px;
+}
+.left .findResult .resultInfo{
+	flex: 1;
+	background-color: skyblue;
+	border: #000000 solid 2.5px;
+	border-radius: 8px;
+	margin-left: 10px;
+}
+.left .findResult .resultInfo h1{
+	font-size: 18px;
+	text-decoration: underline;
+	margin: 5px 5px;
+}
+.left .findResult .resultInfo p{
+	margin: 8px;
+}
+
+.right{
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	padding-left: 0px;
+}
+
+.right .topNavigator{
+	display: flex;
+	list-style-type: none;
+	background-color: #9F9F9F;
+	margin-top: 15px;
+	margin-bottom: 0;
+	padding: 0;
+	border: #555555 solid 2.5px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.right .topNavigator li a{
+	flex: 1;
+	color: black;	
+	display: block;
+	text-align: center;
+	padding: 13px 16px;
+	margin: 0;
+	text-decoration: none;
+	font: bold 35px;
+	border-radius: 10px;
+}
+
+.right .topNavigator li a:hover{
+	background-color: #ddd;
+}
+
+h1{
+	color: #000000;
+	margin-bottom: 10px;
+}
+		
+.valueBar{
+	display: flex;
+	flex-direction: column;
+}
+.valueBar .point{
+	width: 50px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-left: 193px;
+	/*
+	margin-left: 193px;//middel
+	margin-left: 50px;//totally benign
+	margin-left: 330px;//totally malicious
+	*/
+}
+.valueBar .result{
+	width: 458px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.display{
+	display: flex;
+	flex-direction: column;
+	border: #555555 solid 2px;
+	border-radius: 5px;
+	margin-top: 5px;
+	font-size: 20px;
+	color: white;
+	height: 440px;
+	background-color: #DEDEDE;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#ponitMove{
+	animation: myMove 2s ;
+	-moz-animation: myMove 2s ; 
+	-webkit-animation: myMove 2s ; 
+}
+		
+@keyframes myMove{
+	0%{
+		transform: translate(0,0);
+	}
+	33%{
+		transform: translate(-143px,0);
+	}
+	100%{
+		transform: translate(+143px,0);
+	}
+}	
+		
+@-webkit-keyframes myMove{
+	0%{
+		-webkit-transform: translate(0,0);
+	}
+	33%{
+		-webkit-transform: translate(-143px,0);
+	}
+	100%{
+		-webkit-transform: translate(+143px,0);
+	}
+}	
+

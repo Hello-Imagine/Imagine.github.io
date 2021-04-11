@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sign Up</title>
+		
+		<link rel="icon" href="https://gitee.com/li-meijin/apk_detection_images/raw/master/20210302112614.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="https://gitee.com/li-meijin/apk_detection_images/raw/master/20210302112614.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/log.css">
+		<link rel="stylesheet" href="css/topnav.css">
+	</head>
+	<body>
+		<div class="topnav">
+		  <a href="index.html" class="active">Home</a>		  
+		  <a href="securityCommunity.html">Security Community</a>
+		  <a href="about-detection/abou-us.html">About Detection</a>	  		  
+		  <a class="now" style="float: right;">Sign up</a>
+		  <a href="log-in.html" style="float: right;">Log in</a>
+		</div>		
+		
+		<div class="content">
+			<img class="content-logo" src="https://gitee.com/li-meijin/apk_detection_images/raw/master/20210302112457.png" alt="logo">
+			<h1 class="content-title">Sign Up</h1>
+			<div class="content-form">
+				<form name="SignUp" method="post" action="" onsubmit="return submitTest()">
+					<div id="change_margin_1">
+						<input class="user" id="user" name="user" type="text" placeholder="user name">
+					</div>
+					<!-- input的value为空时弹出提醒 -->
+					<p id="remind_1"></p>
+					<div id="change_margin_2">
+						<input class="password" id="password" name="password" type="password" placeholder="password">
+					</div>
+					<!-- input的value为空时弹出提醒 -->
+					<p id="remind_2"></p>
+					<div id="change_margin_3">
+						<input class="content-form-signup" type="submit" value="sign up">
+					</div>
+				</form>
+			</div>
+			<div class="content-login-description">Have your account already?</div>
+			<div><a class="content-login-link" href="log-in.html">Log in</a></div>
+		</div>
+		
+		<script src="js/log.js"></script>
+	</body>
+</html>

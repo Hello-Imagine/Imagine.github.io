@@ -1,0 +1,34 @@
+/* 导航条 */
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+	background: black;
+	width: 100%;
+	height: 45px;
+	top: 0;
+}
+
+/* 导航链接 */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #BBBB;
+	color: #000000;
+}
+
+.topnav a.now {
+	background-color: #9999;
+	color: black;
+}

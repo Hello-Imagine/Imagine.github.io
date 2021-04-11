@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Detection Result</title>
+		
+		<link rel="icon" href="https://gitee.com/li-meijin/apk_detection_images/raw/master/20210302112614.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="https://gitee.com/li-meijin/apk_detection_images/raw/master/20210302112614.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../css/topnav.css" type="text/css" />
+		<link rel="stylesheet" href="../css/result.css" type="text/css" />
+		
+		<style>
+			.display{
+				padding: 0px 10px;
+			}
+			
+			.display h{
+				color: #333333;
+				font-size: 25px;
+				margin: 0px 0px;
+				font-weight: bold;
+			}
+			.display p{
+				color: #333333;
+				font-size: 16px;
+			}
+		</style>
+		
+	</head>
+	
+	
+	
+	<body>		
+		
+		<div class="topnav">
+		  <a href="../index.html">Home</a>		  
+		  <a href="../securityCommunity.html">Security Community</a>
+		  <a href="../about-detection/abou-us.html">About Detection</a>	  		  
+		  <a class="now" style="float: right;">Sign up</a>
+		  <a href="../log-in.html" style="float: right;">Log in</a>
+		</div>
+		
+		<div class="container">
+			<div class="left">
+				<h1>Detection Result</h1>
+				
+				<div class="valueBar">
+					<h><img class="point" id="ponitMove" src="../img/point.PNG"/></h>
+					<h><img class="result" src="../img/result.PNG"/></h>
+				</div>
+
+				<div class="findResult">
+					<img id="resultImg" src="../img/malware.png"/>
+					<div class="resultInfo">
+						<h1 class="title" id="title">The APK file is totally benign !</h1>
+						<p id="info1">We didn't find any malicious part in your upload.</p>
+						<p id="info2">YThis App will not infringe privacy, execute malicious instructions and other unexpected behaviors. you can use it without any worry.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="right">
+				<ul class="topNavigator">
+					<li><a href="result.html">Detection Result</a></li>
+					<li><a href="detail.html">More Details</a></li>
+					<li><a href="comments.html">Community Comments</a></li>
+					<li><a onclick="downLoadReport">Download Result</a></li>
+				</ul>
+				<div class="display">
+					<h>Activities</h>
+					<p>
+						com.wzh.tab.ui.MainActivity	android.intent.action.MAIN <br/>
+						com.wzh.tab.ui.MainActivity	android.intent.category.LAUNCHER <br/>
+					</p>
+					
+					<h>Permissions</h>
+					<p>
+						android.permission.INTERNET <br/>
+						android.permission.ACCESS_NETWORK_STATE <br/>
+					</p>
+					
+					<h>APIs</h>
+					<p>
+						Landroid/accessibilityservice/AccessibilityServiceInfo; -- getDescription <br/>
+						Landroid/accessibilityservice/AccessibilityServiceInfo; -- loadDescription <br/>
+						Landroid/animation/AnimatorSet; -- removeListener <br/>
+						Landroid/animation/AnimatorSet; -- start <br/>
+						Landroid/animation/ArgbEvaluator; -- init <br/>
+						Landroid/animation/ArgbEvaluator; -- evaluate <br/>
+						Landroid/animation/Keyframe; -- setFraction <br/>
+						Landroid/animation/Keyframe; -- setInterpolator <br/>
+						Landroid/animation/LayoutTransition; -- getAnimator <br/>
+						Landroid/animation/LayoutTransition; -- isChangingLayout <br/>
+					</p>
+					
+					<h>Suspicious Functions</h>
+					<p>
+						LocationManager;->getLastKnownLocation	(Get address location) <br/>
+						android/app/NotificationManager;->notify	(Information notice bar) <br/>
+						ContentResolver;->query	(Read contacts, SMS and other databases) <br/>
+						getRuntime	(Get command line environment) <br/>
+						java/net/URL;->openConnection	(Connection URL) <br/>
+						java/net/HttpURLConnection;->connect	(Connection URL)
+					</p>
+					
+					<h>File List</h>
+					<p>
+						res/drawable/ic_sign_name.xml	0xed69ad51<br/>
+						META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version	0xfd7ea868<br/>
+						com/nostra13/universalimageloader/core/listener/SimpleImageLoadingListener.java	0x32e0b18d<br/>
+						com/nostra13/universalimageloader/utils/IoUtils.java	0xcc28e12c<br/>
+						res/drawable-v21/abc_list_divider_material.xml	0x40627491<br/>
+						res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png	0xc8900a8e<br/>
+						kotlin/reflect/reflect.kotlin_builtins	0x7197960a<br/>
+						res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png	0xc8e02261<br/>
+						res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png	0x19b7f8
+					</p>
+					
+				</div>
+			</div>
+			
+		</div>
+				
+		<script src="../js/result.js"></script>		
+	</body>
+</html>

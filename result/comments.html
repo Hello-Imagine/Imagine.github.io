@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Detection Result</title>
+		
+		<link rel="icon" href="https://gitee.com/li-meijin/apk_detection_images/raw/master/20210302112614.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="https://gitee.com/li-meijin/apk_detection_images/raw/master/20210302112614.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../css/topnav.css" type="text/css" />
+		<link rel="stylesheet" href="../css/result.css" type="text/css" />
+		
+		<style>
+			.display{
+				padding: 0px 10px;
+			}
+			
+			.display h{
+				color: #333333;
+				font-size: 25px;
+				margin: 0px 0px;
+				font-weight: bold;
+			}
+			.display p{
+				color: #333333;
+				font-size: 16px;
+			}
+		</style>
+		
+	</head>
+	
+	
+	
+	<body>		
+		
+		<div class="topnav">
+		  <a href="../index.html">Home</a>		  
+		  <a href="../securityCommunity.html">Security Community</a>
+		  <a href="../about-detection/abou-us.html">About Detection</a>	  		  
+		  <a class="now" style="float: right;">Sign up</a>
+		  <a href="../log-in.html" style="float: right;">Log in</a>
+		</div>
+		
+		<div class="container">
+			<div class="left">
+				<h1>Detection Result</h1>
+				
+				<div class="valueBar">
+					<h><img class="point" id="ponitMove" src="../img/point.PNG"/></h>
+					<h><img class="result" src="../img/result.PNG"/></h>
+				</div>
+
+				<div class="findResult">
+					<img id="resultImg" src="../img/malware.png"/>
+					<div class="resultInfo">
+						<h1 class="title" id="title">The APK file is totally benign !</h1>
+						<p id="info1">We didn't find any malicious part in your upload.</p>
+						<p id="info2">YThis App will not infringe privacy, execute malicious instructions and other unexpected behaviors. you can use it without any worry.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="right">
+				<ul class="topNavigator">
+					<li><a href="result.html">Detection Result</a></li>
+					<li><a href="detail.html">More Details</a></li>
+					<li><a href="comments.html">Community Comments</a></li>
+					<li><a href="">Download Result</a></li>
+				</ul>
+				<div class="display">
+
+					
+				</div>
+			</div>
+			
+		</div>
+				
+		<script src="../js/result.js"></script>
+	</body>
+</html>

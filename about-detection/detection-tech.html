@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<link rel="icon" href="https://gitee.com/li-meijin/apk_detection_images/raw/master/20210302112614.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="https://gitee.com/li-meijin/apk_detection_images/raw/master/20210302112614.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../css/about-detection.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/topnav.css" type="text/css"/>
+
+		<title>About Detection</title>
+		
+	</head>
+	<body>
+		<div class="topnav">
+		  <a href="../index.html">Home</a>		  
+		  <a href="../securityCommunity.html">Security Community</a>
+		  <a class="now">About Detection</a>	  		  
+		  <a href="../sign-up.html" class="active" style="float: right;">Sign up</a>
+		  <a href="../log-in.html" style="float: right;">Log in</a>
+		</div>
+		
+		<div id="leftnav"></div>
+		<script src="../js/leftnav.js"></script>
+
+		<div class="content">
+			<h1>Detection Technology<img src="https://gitee.com/li-meijin/apk_detection_images/raw/master/20210302112519.png"></img></h1>
+			
+			<h2>Static Analysis</h2>
+			<p>Traditional static analysis methods classify malware mainly based on the static features of  Android application package files. Some of the existing studies used API calls and permissions as a feature to check if malware exists in the smartphone application. </p>
+			<p>In the partition based on feature extraction method, the static analysis does not need to run the executable file samples, but directly judges whether the file is malicious by analyzing the disk physical image of the file. Generally, the static characteristics of samples are analyzed, including bytecode sequence, hash signature, system function call sequence, control flow diagram, opcode sequence, disassembly sequence, etc. </p>
+			<p>The advantage of static analysis and detection technology is that it doesn't need to run samples, and the feature extraction process takes up less resources, so it can easily achieve the feature extraction of batch samples; the disadvantage is that it is easy to be affected by shelling and confusion technology, and it usually needs shelling, decryption and standardization before analysis.</p>
+			
+			<h2>Dynamic Analysis</h2>
+			<p>Dynamic analysis uses virtual machine or sandbox to execute the samples to be tested, monitors and collects the behavior data generated in the process of program execution as classification features. The content of the sample in the memory may be different from the static content in the disk when it is executed. This method judges whether it is malicious when the file is running. Behavior characteristics mainly include the following aspects: file operation behavior, registry key value operation behavior, dynamic link library loading behavior, process access operation behavior, system service behavior, network access request, API call behavior, etc. </p>
+			<p>The advantage of dynamic analysis and detection technology is that it can accurately identify the nature of its malicious behavior, and it is still effective for shelled, deformed, polymorphic and confused samples; the disadvantage is that the dynamic operation process is complex, the resource occupation is large, and the feature extraction can not be realized in batch.</p>
+			
+			<h2>&nbsp;<img src="https://gitee.com/li-meijin/apk_detection_images/raw/master/20210302112523.png"></h2>
+			<p>In addition, researchers use both static and dynamic methods to analyze malware, complement the advantages of the two methods, identify the characteristics of malware from two views, and improve the accuracy and robustness of detection methods.</p>
+			
+		</div>
+
+		</ul>
+	</body>
+</html>
